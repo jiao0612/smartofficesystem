@@ -1,0 +1,15 @@
+
+server:
+  port: 8080
+spring:
+  #应用配置
+  application:
+    name: filesystem
+  #数据库配置
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    jdbc-url: jdbc:mysql://localhost:3306/filesystem?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:/spring/mapper/*.xml
